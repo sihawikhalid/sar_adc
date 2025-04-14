@@ -1,0 +1,74 @@
+v {xschem version=3.4.6RC file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+spice_sym_def=".include /foss/designs/sar_adc/sar_logic_analog.spice"
+}
+V {}
+S {}
+E {}
+L 4 0 -340 0 0 {}
+L 4 0 0 140 0 {}
+L 4 140 -340 140 0 {}
+L 4 0 -340 140 -340 {}
+L 4 -10 -10 0 -10 {}
+L 4 -10 -30 0 -30 {}
+L 4 140 -10 150 -10 {}
+L 4 140 -30 150 -30 {}
+L 4 140 -50 150 -50 {}
+L 4 140 -70 150 -70 {}
+L 4 140 -90 150 -90 {}
+L 4 140 -110 150 -110 {}
+L 4 140 -130 150 -130 {}
+L 4 140 -150 150 -150 {}
+L 4 140 -170 150 -170 {}
+L 4 140 -190 150 -190 {}
+L 4 140 -210 150 -210 {}
+L 4 140 -230 150 -230 {}
+L 4 140 -250 150 -250 {}
+L 4 140 -270 150 -270 {}
+L 4 140 -290 150 -290 {}
+L 4 140 -310 150 -310 {}
+L 4 140 -330 150 -330 {}
+B 5 -12.5 -12.5 -7.5 -7.5 {name=comp_in dir=in pinnumber=1}
+B 5 -12.5 -32.5 -7.5 -27.5 {name=clk dir=in pinnumber=2}
+B 5 147.5 -12.5 152.5 -7.5 {name=dig_out.0 dir=out pinnumber=3}
+B 5 147.5 -32.5 152.5 -27.5 {name=dig_out.1 dir=out pinnumber=4}
+B 5 147.5 -52.5 152.5 -47.5 {name=dig_out.2 dir=out pinnumber=5}
+B 5 147.5 -72.5 152.5 -67.5 {name=dig_out.3 dir=out pinnumber=6}
+B 5 147.5 -92.5 152.5 -87.5 {name=dig_out.4 dir=out pinnumber=7}
+B 5 147.5 -112.5 152.5 -107.5 {name=dig_out.5 dir=out pinnumber=8}
+B 5 147.5 -132.5 152.5 -127.5 {name=dig_out.6 dir=out pinnumber=9}
+B 5 147.5 -152.5 152.5 -147.5 {name=dig_out.7 dir=out pinnumber=10}
+B 5 147.5 -172.5 152.5 -167.5 {name=sample dir=out pinnumber=11}
+B 5 147.5 -192.5 152.5 -187.5 {name=dac_in.0 dir=out pinnumber=12}
+B 5 147.5 -212.5 152.5 -207.5 {name=dac_in.1 dir=out pinnumber=13}
+B 5 147.5 -232.5 152.5 -227.5 {name=dac_in.2 dir=out pinnumber=14}
+B 5 147.5 -252.5 152.5 -247.5 {name=dac_in.3 dir=out pinnumber=15}
+B 5 147.5 -272.5 152.5 -267.5 {name=dac_in.4 dir=out pinnumber=16}
+B 5 147.5 -292.5 152.5 -287.5 {name=dac_in.5 dir=out pinnumber=17}
+B 5 147.5 -312.5 152.5 -307.5 {name=dac_in.6 dir=out pinnumber=18}
+B 5 147.5 -332.5 152.5 -327.5 {name=dac_in.7 dir=out pinnumber=19}
+T {comp_in} 5 -14 0 0 0.2 0.2 {}
+T {clk} 5 -34 0 0 0.2 0.2 {}
+T {dig_out.0} 85 -14 0 0 0.2 0.2 {}
+T {@symname} 1.5 14 0 0 0.2 0.2 {}
+T {@name} 150 -357 0 0 0.2 0.2 {}
+T {dig_out.1} 85 -34 0 0 0.2 0.2 {}
+T {dig_out.2} 85 -54 0 0 0.2 0.2 {}
+T {dig_out.3} 85 -74 0 0 0.2 0.2 {}
+T {dig_out.4} 85 -94 0 0 0.2 0.2 {}
+T {dig_out.5} 85 -114 0 0 0.2 0.2 {}
+T {dig_out.6} 85 -134 0 0 0.2 0.2 {}
+T {dig_out.7} 85 -154 0 0 0.2 0.2 {}
+T {sample} 85 -174 0 0 0.2 0.2 {}
+T {dac_in.0} 85 -194 0 0 0.2 0.2 {}
+T {dac_in.1} 85 -214 0 0 0.2 0.2 {}
+T {dac_in.2} 85 -234 0 0 0.2 0.2 {}
+T {dac_in.3} 85 -254 0 0 0.2 0.2 {}
+T {dac_in.4} 85 -274 0 0 0.2 0.2 {}
+T {dac_in.5} 85 -294 0 0 0.2 0.2 {}
+T {dac_in.6} 85 -314 0 0 0.2 0.2 {}
+T {dac_in.7} 85 -334 0 0 0.2 0.2 {}
